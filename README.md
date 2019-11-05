@@ -1,0 +1,1 @@
+# Skill_SS7_TypeAndVariables
