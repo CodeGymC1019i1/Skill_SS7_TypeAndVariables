@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="myform">
+    <input type="text" id="number_a"><br><br>
+    <input type="text" id="number_b"><br><br>
+
+    <button type="button" name="" value="Add" onclick="add()">ADD</button>
+    <button type="button" name="" value="Subtract" onclick="subtract()">SUBTRACT</button>
+    <button type="button" name="" value="Multiply" onclick="subtiple()">SUBTIPLE</button>
+    <button type="button" name="" value="Divide" onclick="divide()">DIVIDE</button><br>
+
+</form>
+
+<!--script-->
+<script type="text/javascript">
+
+
+function add() {
+     let number_a_value = document.getElementById("number_a").value;
+       let number_b_value = document.getElementById("number_b").value;
+        number_a_value=parseInt(number_a_value);
+        number_b_value=parseInt(number_b_value);
+
+        let tong = number_a_value + number_b_value;
+        console.log(tong);
+      alert(tong)
+     }
+
+ function subtract() {
+     let number_a_value = document.getElementById("number_a").value;
+     let number_b_value = document.getElementById("number_b").value;
+     number_a_value=parseInt(number_a_value);
+     number_b_value=parseInt(number_b_value);
+     let hieu = number_a_value - number_b_value;
+     console.log(hieu);
+     alert(hieu)
+ }
+
+function subtiple() {
+    let number_a_value = document.getElementById("number_a").value;
+    let number_b_value = document.getElementById("number_b").value;
+    number_a_value = parseInt(number_a_value);
+    number_b_value = parseInt(number_b_value);
+    let tich = number_a_value * number_b_value;
+    alert(tich)
+}
+
+function divide() {
+   let number_a_value = document.getElementById("number_a").value;
+   let number_b_value = document.getElementById("number_b").value;
+   number_a_value=parseInt(number_a_value);
+   number_b_value=parseInt(number_b_value);
+   let thuong = number_a_value / number_b_value;
+   console.log(thuong);
+   alert(thuong)
+
+}
+// function add(){
+  //     number_a=parseInt(number_a)
+  //     number_b=parseInt(number_b)
+  //     result=number_a+number_b;
+  //      myform.result.value=result
+  //   }
+   // function subtract() {
+   //     fst=parseInt(myform.fst.value)
+   //     snd=parseInt(myform.snd.value)
+   //     result=fst-snd
+   // myform.result.value=result
+   // }
+   // function multiply() {
+   //     fst=parseInt(myform.fst.value)
+   //     snd=parseInt(myform.snd.value)
+   //     result=fst-snd
+   //     myform.result.value=result
+   // }
+   // function divide() {
+   //     fst=parseInt(myform.fst.value)
+   //     snd=parseInt(myform.snd.value)
+   //     result=fst-snd
+   //     myform.result.value=result
+   // }
+
+</script>
+
+
+</body>
+</html>
