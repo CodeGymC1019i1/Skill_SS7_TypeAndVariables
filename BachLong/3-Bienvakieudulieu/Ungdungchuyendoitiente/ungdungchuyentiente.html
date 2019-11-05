@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+So Tien <input type="number" id="number">
+<br>
+
+Tien Goc
+<select id="fromMoney">
+    <option value="USD">US</option>
+    <option value="VND">VND</option>
+</select>
+Tien Doi<select id="toMoney">
+    <option value="USD">US</option>
+    <option value="VND">VND</option>
+</select>
+<br>
+<input type="button" value="DoiTien" onclick="changeMoney();">
+<span id="result">
+
+</span>
+
+<script>
+    function changeMoney() {
+
+        let toMoney = document.getElementById('toMoney').value;
+        let fromMoney = document.getElementById('fromMoney').value;
+        let number = document.getElementById('number').value;
+        let result = number;
+
+        if   (fromMoney=="USD" && toMoney=="VND" )
+        {result= number * 23000 }
+        else if
+            (fromMoney=="VND" && toMoney=="USD")
+        {result= number / 23000 }
+
+        document.getElementById('result').innerText= "Tien " + result;
+
+
+
+
+    }
+
+
+</script>
+
+</body>
+</html>
