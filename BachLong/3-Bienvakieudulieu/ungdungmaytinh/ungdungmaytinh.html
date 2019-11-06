@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {width: 80px;background: darkgrey}
+    </style>
+</head>
+<body>
+    <form>
+
+        <h2>Calculate</h2>
+        <p><input type="text" id="value1"> &nbsp;&nbsp;<input type="text" id="value2"></p>
+        <table>
+
+            <tr >
+                <td><button type="button" onclick="showMessage('+')">+</button></td>
+                <td><button type="button" onclick="showMessage('-')">-</button></td>
+                <td><button type="button" onclick="showMessage('x')">x</button></td>
+                <td><button type="button" onclick="showMessage('/')">/</button></td>
+            </tr>
+
+        </table>
+
+        <p id="result"></p>
+
+    </form>
+<script>
+    function showMessage(cal) {
+        let value1 = parseFloat(document.getElementById('value1').value);
+        let value2 = parseFloat(document.getElementById('value2').value);
+        let result = 0;
+
+
+        switch (cal) {
+            case '+' :
+                result = value1 + value2;
+                document.getElementById('result').innerHTML = result;
+                break;
+            case '-' :
+                result = value1 - value2;
+                document.getElementById('result').innerHTML = result;
+                break;
+            case 'x' :
+                result = value1 * value2;
+                document.getElementById('result').innerHTML = result;
+                break;
+
+            case '/' :
+                result = value1 / value2;
+                document.getElementById('result').innerHTML = result;
+                break;
+
+
+
+        }
+
+
+
+
+    }
+
+</script>
+</body>
+</html>
