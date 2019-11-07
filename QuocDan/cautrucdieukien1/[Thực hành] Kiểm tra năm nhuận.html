@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Nam = parseInt(prompt("Nhap_Vao_Nam"));
+
+    if( Nam % 4 == 0 ){
+        if ( Nam % 100 == 0){
+            if ( Nam % 400 == 0)
+                document.write("Phải Năm Nhuận")
+        } else {
+            document.write(" Không Phải Năm Nhuận")
+        }
+     } else {
+        document.write(" Phải năm nhuận");
+    }
+
+</script>
+</body>
+</html>
