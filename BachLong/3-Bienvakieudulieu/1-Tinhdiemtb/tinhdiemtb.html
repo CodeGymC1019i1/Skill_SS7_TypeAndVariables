@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p {width: 100px}
+
+    </style>
+</head>
+<body>
+
+<p>Nhập điểm Sinh <input id="dsinh" type="text" ></p>
+<p>Nhập điểm Lý <input id="dly" type="text" ></p>
+<p>Nhập điểm Hóa <input id="dhoa" type="text" ></p>
+<button type="button" onclick="getdtb()" >Tính điểm trung bình</button>
+<p id="dtb"></p>
+
+
+</body>
+
+<script>
+    function getdtb (){
+    let dsinh = parseFloat(document.getElementById('dsinh').value);
+    let dly = parseFloat(document.getElementById('dly').value);
+    let dhoa = parseFloat(document.getElementById('dhoa').value);
+    let dtb = 0;
+
+    dtb = (dsinh + dly + dhoa)/3
+
+    document.getElementById('dtb').innerHTML = "Điểm 3 môn " + dtb;
+    }
+</script>
+</html>
